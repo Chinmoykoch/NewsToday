@@ -1,0 +1,44 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12%;
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: -1;
+
+  .sidebar-logo {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 0.0625rem solid #555;
+  }
+
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding:1.25rem;
+      margin-top: 5.5rem; /* Add margin to the top of menu items */
+      border-bottom: 0.0625rem solid #555;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  }
+}
