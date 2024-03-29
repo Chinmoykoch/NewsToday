@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Feed from "./Components/Feed/Feed";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import SignIn from "./Components/Auth/SignIn";
+import SignUp from "./Components/Auth/SignUp";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/signIn" element={<SignIn />} />
+        <Route path="/signUp" element={<SignUp />} />
+
       </Routes>
     </BrowserRouter>
   );
